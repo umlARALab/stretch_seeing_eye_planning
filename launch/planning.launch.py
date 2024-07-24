@@ -8,5 +8,10 @@ def generate_launch_description():
             package="stretch_seeing_eye_planning",
             executable="object_filter",
             output="screen"
+        ),
+        Node(
+            package="stretch_seeing_eye_planning",
+            executable="planning_node",
+            output="screen"
         )
     ])

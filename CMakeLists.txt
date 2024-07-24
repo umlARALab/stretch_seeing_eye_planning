@@ -14,6 +14,9 @@ find_package(std_msgs REQUIRED)
 add_executable(object_filter src/object_filter.cpp)
 ament_target_dependencies(object_filter rclcpp)
 
+add_executable(planning_node src/planning.cpp)
+ament_target_dependencies(planning_node rclcpp)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -28,6 +31,7 @@ endif()
 
 install(TARGETS
   object_filter
+  planning_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
