@@ -1,0 +1,4 @@
+object_filter:
+  ros__parameters:
+    retain_within_bounding_box: [0, 0, 240, 240]  # [x, y, width, height]
+    minimum_score: 50.0  # Any score below this will be filtered out

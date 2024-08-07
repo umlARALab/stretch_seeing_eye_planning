@@ -10,7 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(stretch_seeing_eye_msgs)
+find_package(stretch_seeing_eye_msgs REQUIRED)
 
 add_executable(object_filter src/object_filter.cpp)
 ament_target_dependencies(object_filter rclcpp)
