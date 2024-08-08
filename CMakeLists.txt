@@ -13,7 +13,7 @@ find_package(std_msgs REQUIRED)
 find_package(stretch_seeing_eye_msgs REQUIRED)
 
 add_executable(object_filter src/object_filter.cpp)
-ament_target_dependencies(object_filter rclcpp)
+ament_target_dependencies(object_filter rclcpp stretch_seeing_eye_msgs)
 
 add_executable(planning_node src/planning.cpp)
 ament_target_dependencies(planning_node rclcpp stretch_seeing_eye_msgs)
